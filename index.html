@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>        
+    body{
+            font-family: sans-serif;
+            background-color: lightgrey;
+    }
+    
+    form{
+        margin-left: 5%;
+        background-color: #fff;
+        padding: 5%;
+        border-radius: 10px;
+        width: 70%;
+        box-shadow: -2px 3px 30px 1px #000;
+        }
+    .hibas{
+        box-shadow: -2px 3px 30px 1px rgb(198, 91, 248);
+    }
+
+    .helyes{
+        box-shadow: -2px 3px 30px 1px rgb(31, 138, 138);
+    }
+
+    .inputFolyamatban{
+        box-shadow: -2px 3px 30px 1px rgb(105, 208, 255);
+    }
+    .tablazat{
+        margin-left: 5%;
+        background-color: #fff;
+        padding: 5%;
+        border-radius: 15px;
+        width: 70%;
+        box-shadow: -2px 3px 30px 1px #000;
+    }
+</style>
+
+<body>
+    <form acrion="">
+        <div>
+            <label for="cim">Cím:</label><br>
+            <input type="text" id="cim" name="cim" maxlength="50" required><br>
+        </div>
+        <div>
+            <label for="leiras">Leírás:</label><br>
+            <input type="textarea" id="leiras" name="leiras" style="height:200px;" minlength="5" maxlength="250"><br>
+        </div>
+        <div>
+            <label for="felelos">Felelős neve:</label><br>
+            <input type="text" id="felelosneve" name="felelosneve"><br>
+            <label for="felelos">Felelős email címe:</label><br>
+            <input type="email" id="felelosemail" name="felelosemail" required><br>
+
+        </div>
+        <div>
+            <label for="hatarido">Határidő:</label><br>
+            <input type="date" id="hatarido" name="hatarido" min=""><br>
+        </div>
+        <div>
+            <label for="prioritas">Prioritás:</label><br>
+            <input type="radio" id="prioritas" name="prioritas" value="Alacsony">
+            <label for="prioritás">Alacsony</label>
+            <input type="radio" id="prioritas" name="prioritas" value="Közepes">
+            <label for="prioritás">Közepes</label>
+            <input type="radio" id="prioritas" name="prioritas" value="Magas">
+            <label for="prioritás">Magas</label> <br>
+        </div>
+        <button tyle="submit">LÉTREHOZ</button>
+        
+    </form>
+    <br>
+    <div class="tablazat">
+        <table>
+            <thead>
+                <tr>
+                    <th>Cím</th>
+                    <th>Leírás</th>
+                    <th>Felelős neve</th>
+                    <th>Felelős email címe</th>
+                    <th>Határidő</th>
+                    <th>Prioritás</th>
+                    <th>Törlés</th>
+                    <th>Módosítás</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+            
+        </table>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
